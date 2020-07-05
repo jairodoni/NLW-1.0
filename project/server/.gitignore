@@ -1,3 +1,4 @@
-node_modules
-*.sqlite
-*.png
+/node_modules
+package-lock.json*
+/src/database/database.sqlite*
+.sqlite*
