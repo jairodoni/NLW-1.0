@@ -1,26 +1,14 @@
 import express from 'express';
+import cors from 'cors';
+import path from 'path';
+import routes from './routes'
 
 const app = express();
 
-// Rota: Endereço completo da requisição
-// Recurso: Qual entidade estamos acessando do sistema
+app.use(cors())
+app.use(express.json());
+app.use(routes);
 
-//GET: Buscar uma informação ou mais  informações do back-end
-//POST: Criar uma nova informação no back-end
-//PUT: Atualizar uma informação exixtente no back-end
-//DELETE: Remove uma informação do back-end
-
-app.get('/users',(request, response) =>{
-    console.log('Listagem de usuarios');
-
-    // response.send('Hello Word')
-    response.json([
-        'Diego',
-        'Cleitom',
-        'Robison',
-    ])
-})
-
-
+app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
 
 app.listen(3333);
