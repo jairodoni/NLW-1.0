@@ -56,7 +56,7 @@ class PointsController {
     const trx = await knex.transaction();
 
     const point = {
-      image: "https://images.unsplash.com/photo-1578916171728-46686eac8d58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60",
+      image: "https://scontent.fpoo2-1.fna.fbcdn.net/v/t1.0-9/p960x960/72644583_2559652424125562_8426269597556015104_o.png?_nc_cat=110&_nc_sid=85a577&_nc_eui2=AeHQgyOKVjRIOK3DCmQ-MD_mPNsv1i8vE4k82y_WLy8TiXlhpKxoElRiJf0hdRlNU1vVQMVYyrTGawUziiT1Fp99&_nc_ohc=DKGxWQ-G_FUAX-RgCBp&_nc_ht=scontent.fpoo2-1.fna&oh=f716f5620d8e3acf6a07fd7459901d72&oe=5F28E421",
       name,
       email,
       whatsapp,
