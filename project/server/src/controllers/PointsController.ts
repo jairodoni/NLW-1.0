@@ -17,16 +17,31 @@ class PointsController {
     .where('uf', String(uf))
     .distinct()
     .select('points.*');
-    
-    return response.json(points);
+
+    const serializedPoints = points.map(point => {
+      return {
+        ...point,
+        image_url: `http://192.168.0.112:3333/uploads/${point.image}`,
+      };
+    });
+
+    return response.json(serializedPoints);
   }
   async show(request: Request, response: Response) {
     const { id } = request.params;
 
     const point = await knex("points").where("id", id).first();
+
     if (!point) {
       return response.status(400).json({ messege: "Point not found" });
     }
+ 
+    const serializedPoints = {
+      ...point,
+      image_url: `http://192.168.0.112:3333/uploads/${point.image}`,
+    };
+
+
     /**
      * SELECT * FROM items
      *  JOIN point_items ON items.id = point_items.item_id
@@ -37,7 +52,7 @@ class PointsController {
       .where("point_items.point_id", id)
       .select("items.title");
 
-    return response.json({ point, items });
+    return response.json({ point: serializedPoints ,items });
   }
 
   async create(request: Request, response: Response) {
@@ -56,7 +71,7 @@ class PointsController {
     const trx = await knex.transaction();
 
     const point = {
-      image: "https://scontent.fpoo2-1.fna.fbcdn.net/v/t1.0-9/p960x960/72644583_2559652424125562_8426269597556015104_o.png?_nc_cat=110&_nc_sid=85a577&_nc_eui2=AeHQgyOKVjRIOK3DCmQ-MD_mPNsv1i8vE4k82y_WLy8TiXlhpKxoElRiJf0hdRlNU1vVQMVYyrTGawUziiT1Fp99&_nc_ohc=DKGxWQ-G_FUAX-RgCBp&_nc_ht=scontent.fpoo2-1.fna&oh=f716f5620d8e3acf6a07fd7459901d72&oe=5F28E421",
+      image: request.file.filename,
       name,
       email,
       whatsapp,
@@ -70,7 +85,10 @@ class PointsController {
 
     const point_id = insertedIds[0];
 
-    const pointItems = items.map((item_id: number) => {
+    const pointItems = items
+      .split(',')
+      .map((item: string) => Number(item.trim()))
+      .map((item_id: number) => {
       return {
         item_id,
         point_id,
