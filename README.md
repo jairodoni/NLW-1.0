@@ -1,27 +1,20 @@
-<h1 align=center>
-<img src="" />
+<h1 align="center">
+    <img alt="Ecoleta" title="Ecoleta" src=".github/ecoleta.svg" width="220px" />
 </h1>
 
 <div align="center">
 
 ![GitHub issues][github_issues_badge] ![GitHub][repository_license_badge] ![Node_Badge][node_version_badge] ![Npm_Badge][npm_version_badge] ![React_Badge][web_react_badge] ![React_Native_Badge][mobile_react-native_badge] ![NodeJS_Badge][server_nodejs_badge] [![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.png?v=101)](https://github.com/ellerbrock/typescript-badges/)
-  <a href="https://rocketseat.com.br">
-    <img alt="Made by Rocketseat" src="">
-  </a>
+<br>
+<p align="center">
+  <img alt="Ecoleta" src=".github/ecoleta.png" width="100%">
+</p>
 
 </div>
 
-<h3 align="center">
+## 💻 Projeto
 
-♻️ Ecoleta é um projeto **Open Source** desenvolvido na semana **Next Level Week (1.0)** da **[Rocketseat][rocketseat_site]** utilizando as tecnologias ***TypeScript, Node, React e React Native***.
-
-</h3>
-
-![Banner]()
-
-## **:rocket: OBJETIVO**
-
-O projeto tem como finalidade **estabelecer uma conexão** entre **empresas e/ou entidades que coletam resíduos** (orgânicos e inorgânicos) **às pessoas e/ou entidades que necessitam constantemente descartar esses resíduos**. Solucionando um grande problema recorrente que é o **descarte inadequado do lixo**, facilitando o processo de recliclagem e reutilização.
+O Ecoleta é um marketplace que ajuda pessoas a encontrarem pontos de coleta de resíduos de forma eficiente.
 
 <!-- 
   ...
@@ -194,37 +187,6 @@ $ expo install expo-font @expo-google-fonts/ubuntu @expo-google-fonts/roboto
 
 **\* Lembre de inserir no arquivo `.env` o IP exato que foi gerado pelo seu mobile após utilizar o comando `npm run start`.**
 
-## **:octocat: COMO CONTRIBUIR**
-  
-  - Verifique as **[Issues](https://github.com/x0n4d0/ecoleta/projects/1)** que estão abertas e se já não existe alguma com a sua feature;
-  - Abra uma **Issue** com o nome e descrição da sua feature e assine com o seu usuário informando que irá fazê-la;
-  - Faça um **[fork](https://help.github.com/pt/github/getting-started-with-github/fork-a-repo)** do repositório;
-  - Entre no sua página do GitHub e faça um **clone** do seu **fork**;
-  - Crie uma *branch* com o nome da sua feature: `git chechout -b feat/minhaFeature`;
-  - Faça as alterações necessárias no código ou na documentação;
-  - Instale as dependências do *commitlint* na raíz do projeto para a verificação dos commits: `npm install` ou `yarn`;
-  - Faça o *commit* das suas alterações seguindo as [convenções de commit](https://www.conventionalcommits.org/pt-br/v1.0.0-beta.4/), adicione na descrição o id da sua Issue em parênteses e lembre de fechar a sua Issue com o id no rodapé do commit:
-
-  ```
-    <tipo>(escopo opcional): <descrição> (#x)
-
-    [corpo do commit]
-
-    Close #x
-  ```
-  Exemplo:
-  ```sh
-    feat: adicionado componente para tal coisa (#52)
-
-    Foi adicionado um componente para tal coisa com o objetivo de melhorar tal coisa, deixando o projeto de tal maneira.
-
-    Close #52
-  ```
-  - Faça um *push* para a sua *branch*: `git push origin feat/minhaFeature`;
-  - Agora é só abrir um *pull request* no repositório que você fez o *fork* e assim que acontecer o *merge* sua Issue será fechada e suas alterações irão fazer parte do projeto;
-  - Depois que o *merge* da sua pull request for feito, você pode deletar a sua *branch*.
-
-  \* **Obrigado por contribuir!** ❤️ :facepunch: :blush:
 
 ## **:books: REFERÊNCIAS**
 
@@ -248,19 +210,17 @@ $ expo install expo-font @expo-google-fonts/ubuntu @expo-google-fonts/roboto
 
 <!-- Badges -->
 
-<!-- [github_issues_badge]: https://img.shields.io/github/issues/x0n4d0/ecoleta?color=green -->
+[github_issues_badge]: https://img.shields.io/github/issues/x0n4d0/ecoleta?color=green
 
-
-<!-- 
 [node_version_badge]: https://img.shields.io/badge/node-12.17.0-green
 
 [npm_version_badge]: https://img.shields.io/badge/npm-6.14.4-red
 
-[web_react_badge]: https://img.shields.io/badge/web-react-blue -->
+[web_react_badge]: https://img.shields.io/badge/web-react-blue
 
-<!-- [mobile_react-native_badge]: https://img.shields.io/badge/mobile-react%20native-blueviolet -->
+[mobile_react-native_badge]: https://img.shields.io/badge/mobile-react%20native-blueviolet
 
-<!-- [server_nodejs_badge]: https://img.shields.io/badge/server-nodejs-important -->
+[server_nodejs_badge]: https://img.shields.io/badge/server-nodejs-important
 
 <!-- Techs -->
 
