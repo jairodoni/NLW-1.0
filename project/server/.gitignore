@@ -1,7 +1,15 @@
-.vscode
+
 node_modules
 uploads/*
 !uploads/*.svg
 !uploads/.gitkeep
 
 *.sqlite
+
+### VisualStudioCode ###
+.vscode/*
+*.code-workspace
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history

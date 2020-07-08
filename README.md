@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Node_Badge][node_version_badge] ![Npm_Badge][npm_version_badge] ![React_Badge][web_react_badge] ![React_Native_Badge][mobile_react-native_badge] ![NodeJS_Badge][server_nodejs_badge] [![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.png?v=101)](https://github.com/ellerbrock/typescript-badges/)
+![Npm_Badge][npm_version_badge] ![Node_Badge][node_version_badge] ![NodeJS_Badge][server_nodejs_badge] ![React_Badge][web_react_badge] ![React_Native_Badge][mobile_react-native_badge]  [![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.png?v=101)](https://github.com/ellerbrock/typescript-badges/)
 <br>
 <p align="center">
   <img alt="Ecoleta" src=".github/ecoleta.png" width="100%">
@@ -210,7 +210,7 @@ $ expo install expo-font @expo-google-fonts/ubuntu @expo-google-fonts/roboto
 
 [github_issues_badge]: https://img.shields.io/github/issues/x0n4d0/ecoleta?color=green
 
-[node_version_badge]: https://img.shields.io/badge/node-12.17.0-green
+[node_version_badge]: https://img.shields.io/badge/node-12.18.0-green
 
 [npm_version_badge]: https://img.shields.io/badge/npm-6.14.4-red
 
