@@ -23,7 +23,6 @@
 #page-home .content main {
   flex: 1;
   max-width: 560px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,5 +102,10 @@
 
   #page-home .content main p {
     font-size: 24px;
+  }
+}
+@media(min-width: 1800px) {
+  #page-home .content {
+    max-width: 1800px;
   }
 }

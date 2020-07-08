@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![GitHub issues][github_issues_badge] ![GitHub][repository_license_badge] ![Node_Badge][node_version_badge] ![Npm_Badge][npm_version_badge] ![React_Badge][web_react_badge] ![React_Native_Badge][mobile_react-native_badge] ![NodeJS_Badge][server_nodejs_badge] [![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.png?v=101)](https://github.com/ellerbrock/typescript-badges/)
+![Node_Badge][node_version_badge] ![Npm_Badge][npm_version_badge] ![React_Badge][web_react_badge] ![React_Native_Badge][mobile_react-native_badge] ![NodeJS_Badge][server_nodejs_badge] [![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.png?v=101)](https://github.com/ellerbrock/typescript-badges/)
 <br>
 <p align="center">
   <img alt="Ecoleta" src=".github/ecoleta.png" width="100%">
@@ -15,6 +15,11 @@
 ## 💻 Projeto
 
 O Ecoleta é um marketplace que ajuda pessoas a encontrarem pontos de coleta de resíduos de forma eficiente.
+
+## 🔖 Layout
+
+Você pode visualizar o layout do projeto no formato através [desse link](https://www.figma.com/file/9TlOcj6l7D05fZhU12xWT3/Ecoleta-Booster?node-id=0%3A1). Lembrando que você irá precisar ter uma conta no [Figma](http://figma.com/).
+
 
 <!-- 
   ...
@@ -35,7 +40,7 @@ O Ecoleta é um marketplace que ajuda pessoas a encontrarem pontos de coleta de 
   - **[React Dropzone][react_dropzone]**
 
 
-  \* Veja o arquivo <kbd>[package.json](./sources/website/package.json)</kbd>
+  
 
 #### **Server** ([NodeJS][node] + [TypeScript][typescript])
 
@@ -49,7 +54,7 @@ O Ecoleta é um marketplace que ajuda pessoas a encontrarem pontos de coleta de 
   - **[Celebrate][celebrate]**
   - **[Joi][joi]**
 
-  \* Veja o arquivo <kbd>[package.json](./sources/server/package.json)</kbd>
+  \* Veja o arquivo <kbd>[package.json](./project/server/package.json)</kbd>
 
 #### **Mobile** ([React Native][react_native] + [TypeScript][typescript])
 
@@ -78,7 +83,7 @@ O Ecoleta é um marketplace que ajuda pessoas a encontrarem pontos de coleta de 
 - Fontes: **[Ubuntu][font_ubuntu]**, **[Roboto][font_roboto]**
 
 
-## **:wine_glass: COMO UTILIZAR**
+## **:pushpin: COMO UTILIZAR**
 
 ### Configurações Iniciais
 
@@ -91,9 +96,6 @@ Você pode optar também por utilizar o **yarn** no lugar do **npm**. Você pode
 Após ter o **Node** instalado, instale as dependências do **React e React Native (Expo)** de forma global, utilizando os comandos:
 
 ```sh
-# React:
-$ npm install create-react-app -g
-
 # Expo (React Native):
 $ npm install -g expo-cli 
 ```
@@ -104,7 +106,7 @@ Você precisa renomear o arquivo `.env-example` para `.env` e inserir as informa
 $ mv .env-example .env
 ```
 
-Instale as dependências contidas nos arquivos `package.json` que se encontram na raíz do repositório (para o gerenciamento de commits), no diretório do **server**, no diretório do **website** e no diretório **mobile**. Para instalar as dependências, basta abrir o terminal no diretório e digitar o comando:
+Instale as dependências contidas nos arquivos `package.json` que se encontram na raíz do repositório, no diretório do **server**, no diretório do **website** e no diretório **mobile**. Para instalar as dependências, basta abrir o terminal no diretório e digitar o comando:
 
 ```sh
 $ npm install
@@ -115,10 +117,6 @@ $ yarn
 
 Exemplos:
 ```sh
-# Instalando as dependências do commitlint:
-$ cd ./ecoleta
-$ npm install
-
 # Instalando as dependências do server:
 $ cd ./project/server
 $ npm install
@@ -132,9 +130,9 @@ $ cd ./project/mobile
 $ npm install
 ```
 
-Veja os arquivos **`package.json`** do <kbd>[commitlint](./package.json)</kbd>, <kbd>[server](./sources/server/package.json)</kbd>, <kbd>[website](./sources/website/package.json)</kbd> e <kbd>[mobile](./sources/mobile/package.json)</kbd>.
+Veja os arquivos **`package.json`** do <kbd>[server](./project/server/package.json)</kbd>, <kbd>[website](./project/website/package.json)</kbd> e <kbd>[mobile](./project/mobile/package.json)</kbd>.
 
-### Utilizando o Server
+### Executando o Server
 
 ```sh
 # Abrindo o terminal no diretório do servidor:
@@ -150,13 +148,13 @@ $ npm run knex:migrate
 $ npm run knex:seed
 ```
 
-> Veja a parte de **scripts {}** do arquivo <kbd>[package.json](./sources/server/package.json)</kbd> para saber quais scripts estão disponíveis.
+> Veja a parte de **scripts {}** do arquivo <kbd>[package.json](./project/server/package.json)</kbd> para saber quais scripts estão disponíveis.
 
-### Utilizando o Website
+### Executando o Website
 
 ```sh
 # Abrindo o terminal no diretório do website:
-$ cd ./sources/website
+$ cd ./project/website
 
 # Executando o website no modo de desenvolvimento:
 $ npm run start
@@ -164,13 +162,13 @@ $ npm run start
 
 > Se o browser não abrir automaticamente, acesse: http://localhost:3000.
 
-### Utilizando o Mobile
+### Executando o Mobile
 
 Instale o aplicativo <kbd>[Expo](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en)</kbd> no seu smartphone.
 
 ```sh
 # Abrindo o terminal no diretório do mobile:
-$ cd ./sources/mobile
+$ cd ./project/mobile
 
 # Executando o mobile no modo de desenvolvimento:
 $ npm run start
