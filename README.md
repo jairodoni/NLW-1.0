@@ -15,6 +15,7 @@
 ## 💻 Projeto
 
 O Ecoleta é um marketplace que ajuda pessoas a encontrarem pontos de coleta de resíduos de forma eficiente.
+O Ecoleta foi desenvolvido com base nas aulas da semana NextLevelWeek#1, evento criado pela Rocketseat.
 
 ## 🔖 Layout
 
