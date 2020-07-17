@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Npm_Badge][npm_version_badge] ![Node_Badge][node_version_badge] ![NodeJS_Badge][server_nodejs_badge] ![React_Badge][web_react_badge] ![React_Native_Badge][mobile_react-native_badge] ![GitHub][repository_license_badge] [![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.png?v=101)](https://github.com/ellerbrock/typescript-badges/)
+![Npm_Badge][npm_version_badge] ![Node_Badge][node_version_badge] ![NodeJS_Badge][server_nodejs_badge] ![React_Badge][web_react_badge] ![React_Native_Badge][mobile_react-native_badge] [![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.png?v=101)](https://github.com/ellerbrock/typescript-badges/) ![GitHub][repository_license_badge]
 <br>
 <p align="center">
   <img alt="Ecoleta" src=".github/ecoleta.png" width="100%">
@@ -211,7 +211,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 <!-- Badges -->
 
-[repository_license_badge]: https://img.shields.io/github/license/JairoDoni/ecoleta
+[repository_license_badge]: https://img.shields.io/github/license/JairoDoni/NLW-1.0
 
 [node_version_badge]: https://img.shields.io/badge/node-12.18.0-green
 
