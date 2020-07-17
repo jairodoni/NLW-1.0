@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev --require dotenv/config --transpileOnly --ignore-watch node_modules src/server.ts",
+    "dev": "ts-node-dev --require dotenv/config --transpileOnly --ignore-watch node_modules src/server.ts",
     "tmp": "ts-node-dev --require dotenv/config --ignore-watch node_modules src/controllers/ItemsController.ts",
     "knex:seed": "knex  --knexfile knexfile.ts seed:run",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest"
