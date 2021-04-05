@@ -1,11 +1,35 @@
-<h1 align="center">
-    <img alt="Ecoleta" title="Ecoleta" src=".github/ecoleta.svg" width="220px" />
-</h1>
-
+<div align="center">
+    <h1 align="center">
+        <img alt="Ecoleta" title="Ecoleta" src=".github/ecoleta.svg" width="220px" />
+    </h1>
+    
+   ![Npm_Badge][npm_version_badge] ![Node_Badge][node_version_badge] ![NodeJS_Badge][server_nodejs_badge] ![React_Badge][web_react_badge] ![React_Native_Badge][mobile_react-native_badge]![GitHub][repository_license_badge]
+</div>
 <div align="center">
 
-![Npm_Badge][npm_version_badge] ![Node_Badge][node_version_badge] ![NodeJS_Badge][server_nodejs_badge] ![React_Badge][web_react_badge] ![React_Native_Badge][mobile_react-native_badge]![GitHub][repository_license_badge]
 <br>
+
+<p align="center">
+  <strong>
+      <a href="#-projeto">Projeto</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+  </strong>
+  <strong>
+      <a href="#-layout">Layout</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+  </strong>
+  <strong>
+      <a href="#-tecnologias">Tecnologias</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+  </strong>
+  <strong>
+      <a href="#-como-executar-o-projeto">Executando</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+  </strong>
+  <strong>
+      <a href="#-referências">Referências</a>
+  </strong>
+</p>
+
+<br>
+
+
 <p align="center">
   <img alt="Ecoleta" src=".github/ecoleta.png" width="100%">
 </p>
@@ -28,7 +52,7 @@ Você pode visualizar o layout do projeto no formato através [desse link](https
   ...
 -->
 
-## **:computer: TECNOLOGIAS**
+## **💻 Tecnologias**
 
 
 #### **Website** ([React][react] + [TypeScript][typescript])
@@ -83,7 +107,7 @@ Você pode visualizar o layout do projeto no formato através [desse link](https
 - Fontes: **[Ubuntu][font_ubuntu]**, **[Roboto][font_roboto]**
 
 
-## **:pushpin: COMO UTILIZAR**
+## **🚀 Como executar o projeto**
 
 ### Configurações Iniciais
 
@@ -186,7 +210,7 @@ $ expo install expo-font @expo-google-fonts/ubuntu @expo-google-fonts/roboto
 **\* Lembre de inserir no arquivo `.env` o IP exato que foi gerado pelo seu mobile após utilizar o comando `npm run start`.**
 
 
-## **:books: REFERÊNCIAS**
+## **📚 Referências**
 
 - [React + TypeScript Cheat Sheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
 - [Blog Rocketseat](https://blog.rocketseat.com.br/)
